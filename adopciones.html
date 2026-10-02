@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopciones - Huellitas PAEC CBTis 116</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-brand">
+            <span style="font-size: 28px;">🐾</span>
+            <h1>Huellitas PAEC</h1>
+        </div>
+        <!-- Navegación completa con todas las subpáginas -->
+        <nav class="barra-navegacion">
+            <a href="index.html" class="boton-nav">Inicio</a>
+            <a href="adopciones.html" class="boton-nav activo">Adopciones</a>
+            <a href="beneficios.html" class="boton-nav">Beneficios</a>
+            <a href="cuidados.html" class="boton-nav">Guía de Cuidados</a>
+            <a href="donaciones.html" class="boton-nav">Donaciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <div class="widget">
+                <h3>📌 Requisitos de Adopción</h3>
+                <ul>
+                    <li>Ser mayor de edad o acudir con un tutor legal.</li>
+                    <li>Comprobante de domicilio reciente.</li>
+                    <li>Identificación oficial con fotografía (INE/Pasaporte).</li>
+                    <li>Entrevista presencial de responsabilidad comunitaria.</li>
+                    <li>Firma de compromiso de esterilización y cuidado.</li>
+                </ul>
+            </div>
+
+            <div class="widget" style="border-left-color: var(--purple);">
+                <h3>❓ ¿Cómo es el proceso?</h3>
+                <p>1. Elige una mascota de la galería.<br>
+                2. Acude al módulo PAEC en el plantel.<br>
+                3. Entrevista y revisión de documentos.<br>
+                4. Firma de adopción y entrega oficial.</p>
+            </div>
+
+            <div class="banner-publicidad">
+                <h4>❤️ ¿No puedes adoptar?</h4>
+                <p>Apóyanos donando alimento, insumos médicos o material de limpieza.</p>
+                <a href="donaciones.html" class="boton-publicidad">Donar Ahora</a>
+            </div>
+        </aside>
+
+        <section>
+            <h2>Mascotas Disponibles para Adopción 🐾</h2>
+            <p class="subtitulo-seccion">Conoce a nuestros rescatados. Cada uno cuenta con protocolo completo de salud antes de su integración a un hogar.</p>
+
+            <!-- Filtros estructurados con atributo data-categoria -->
+            <div class="filtros-mascotas">
+                <button class="btn-filtro activo" data-categoria="todos">Todos</button>
+                <button class="btn-filtro" data-categoria="perro">Perros</button>
+                <button class="btn-filtro" data-categoria="gato">Gatos</button>
+            </div>
+
+            <!-- Galería de mascotas completa con data-categoria -->
+            <div class="galeria-mascotas">
+                
+                <div class="tarjeta-mascota" data-categoria="perro">
+                    <div class="img-container">
+                        <img src="img/perro2.jpg" alt="Rocco">
+                        <span class="badge-tipo">Perro 🐕</span>
+                    </div>
+                    <div class="info-mascota">
+                        <div>
+                            <h3>Rocco</h3>
+                            <div class="detalles-mascota">
+                                <span class="tag-detalle">2 Años</span>
+                                <span class="tag-detalle">Macho</span>
+                                <span class="tag-detalle">Talla Mediana</span>
+                            </div>
+                            <p>Rocco es muy juguetón, activo y cariñoso. Le encanta salir a caminar y se lleva excelente con niños y otros perros.</p>
+                        </div>
+                        <button class="btn-adoptar">Quiero Adoptar a Rocco</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-mascota" data-categoria="gato">
+                    <div class="img-container">
+                        <img src="img/gato1.jpg" alt="Luna">
+                        <span class="badge-tipo">Gato 🐈</span>
+                    </div>
+                    <div class="info-mascota">
+                        <div>
+                            <h3>Luna</h3>
+                            <div class="detalles-mascota">
+                                <span class="tag-detalle">1 Año</span>
+                                <span class="tag-detalle">Hembra</span>
+                                <span class="tag-detalle">Hogareña</span>
+                            </div>
+                            <p>Tranquila, observadora y muy limpia. Luna busca un hogar apacible donde pueda tomar la siesta bajo el sol.</p>
+                        </div>
+                        <button class="btn-adoptar">Quiero Adoptar a Luna</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-mascota" data-categoria="perro">
+                    <div class="img-container">
+                        <img src="img/perro1.jpg" alt="Max">
+                        <span class="badge-tipo">Perro 🐕</span>
+                    </div>
+                    <div class="info-mascota">
+                        <div>
+                            <h3>Max</h3>
+                            <div class="detalles-mascota">
+                                <span class="tag-detalle">8 Meses</span>
+                                <span class="tag-detalle">Macho</span>
+                                <span class="tag-detalle">Cachorro</span>
+                            </div>
+                            <p>Un cachorro lleno de energía, rescatado cerca de las canchas del plantel. Ya cuenta con su primera vacuna y desparasitación.</p>
+                        </div>
+                        <button class="btn-adoptar">Quiero Adoptar a Max</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sección informativa adicional -->
+            <div class="caja-destacada">
+                <h4>🏥 Garantía de Salud PAEC</h4>
+                <p>Todas las mascotas entregadas a través del proyecto PAEC del CBTis No. 116 cuentan con cartilla de vacunación al día, desparasitación interna/externa y compromiso de esterilización gratuita en el módulo escolar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto PAEC "Huellitas Comunitarias" &copy; 2026 • CBTis No. 116</p>
+        <p><strong>Contacto: paec.huellitas@cbtis116.edu.mx</strong></p>
+    </footer>
+
+    <!-- Script de filtrado dinámico -->
+    <script src="script.js"></script>
+</body>
+</html>
